@@ -1,49 +1,49 @@
 package modelo;
 
 public class complete {
-	protected Pac a;
-	protected Atend b;
-	protected complete ant;
+	protected Paciente a;
+	protected Atendimento b;
+	protected complete anterior;
 
-	public complete getAnt() {
-	return ant;
+	public complete getAnterior() {
+	    return anterior;
 	}
 
-	public void setAnt(complete ant) {
-	this.ant = ant;
+	public void setAnterior(complete anterior) {
+	    this.anterior = anterior;
 	}
 
-	public complete getProx() {
-	return prox;
+	public complete getProximo() {
+	    return proximo;
 	}
 
-	public void setProx(complete prox) {
-	this.prox = prox;
+	public void setProximo(complete proximo) {
+	    this.proximo = proximo;
 	}
 
-	protected complete prox;
+	protected complete proximo;
 
-	public complete(Pac a, Atend b) {
-	this.a = a;
-	this.b = b;
-	this.ant = null;
-	this.prox = null;
+	public complete(Paciente a, Atendimento b) {
+	    this.a = a;
+	    this.b = b;
+	    this.anterior = null;
+	    this.proximo = null;
 	}
 
-	public Pac getA() {
-	return a;
+	public Paciente getA() {
+	    return a;
 	}
 
-	public void setA(Pac a) {
-	this.a = a;
+	public void setA(Paciente a) {
+	    this.a = a;
 	}
 
-	public Atend getB() {
-	return b;
+	public Atendimento getB() {
+	    return b;
 	}
 
-	public void setB(Atend b) {
-	this.b = b;
+	public void setB(Atendimento b) {
+	    this.b = b;
 	}
 
 }
