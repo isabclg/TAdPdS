@@ -5,6 +5,15 @@ public class complete {
 	protected Atendimento b;
 	protected complete anterior;
 
+	protected complete proximo;
+
+	public complete(Paciente a, Atendimento b) {
+	    this.a = a;
+	    this.b = b;
+	    this.anterior = null;
+	    this.proximo = null;
+	}
+
 	public complete getAnterior() {
 	    return anterior;
 	}
@@ -19,15 +28,6 @@ public class complete {
 
 	public void setProximo(complete proximo) {
 	    this.proximo = proximo;
-	}
-
-	protected complete proximo;
-
-	public complete(Paciente a, Atendimento b) {
-	    this.a = a;
-	    this.b = b;
-	    this.anterior = null;
-	    this.proximo = null;
 	}
 
 	public Paciente getA() {
