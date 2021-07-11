@@ -1,0 +1,49 @@
+package modelo;
+
+public class complete {
+	protected Pac a;
+	protected Atend b;
+	protected complete ant;
+
+	public complete getAnt() {
+	return ant;
+	}
+
+	public void setAnt(complete ant) {
+	this.ant = ant;
+	}
+
+	public complete getProx() {
+	return prox;
+	}
+
+	public void setProx(complete prox) {
+	this.prox = prox;
+	}
+
+	protected complete prox;
+
+	public complete(Pac a, Atend b) {
+	this.a = a;
+	this.b = b;
+	this.ant = null;
+	this.prox = null;
+	}
+
+	public Pac getA() {
+	return a;
+	}
+
+	public void setA(Pac a) {
+	this.a = a;
+	}
+
+	public Atend getB() {
+	return b;
+	}
+
+	public void setB(Atend b) {
+	this.b = b;
+	}
+
+}
